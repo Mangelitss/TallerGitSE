@@ -35,7 +35,9 @@ def generar_informe(paciente, mediciones, hoy=None):
     if "tension" in mediciones:
         sis, dia = mediciones["tension"]
         lineas.append(f"Tensión arterial: {sis}/{dia} → {clasificar_tension(sis, dia)}")
-
+    alertas = [l.split("→ ")[1] for l in lineas if "→" in l and not l.endswith("normal")]
+    if alertas:
+        lineas.append("⚠ ALERTAS: " + ", ".join(alertas).upper())
     faltan = [c for c in config.CONSTANTES_OBLIGATORIAS if c not in mediciones]
     if faltan:
         lineas.append("Faltan constantes obligatorias: " + ", ".join(faltan))
