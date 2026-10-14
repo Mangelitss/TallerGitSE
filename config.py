@@ -26,4 +26,4 @@ SPO2_BAJA = 94
 SPO2_HIPOXEMIA = 91
 
 # --- Registro de triaje ---
-CONSTANTES_OBLIGATORIAS = ["temperatura", "frecuencia_cardiaca", "tension", "dolor"]
+CONSTANTES_OBLIGATORIAS = ["temperatura", "frecuencia_cardiaca", "tension", "saturacion"]
