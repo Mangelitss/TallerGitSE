@@ -17,8 +17,8 @@ FC_BRADICARDIA = 50
 FC_TAQUICARDIA = 100
 
 # --- Tensión arterial (mmHg) ---
-TA_SISTOLICA_ALTA = 130
-TA_DIASTOLICA_ALTA = 80
+TA_SISTOLICA_ALTA = 135
+TA_DIASTOLICA_ALTA = 85
 
 
 # --- Saturación de oxígeno (SpO2 %) ---
